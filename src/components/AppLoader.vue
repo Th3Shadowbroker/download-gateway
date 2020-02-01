@@ -24,7 +24,6 @@
                 app: "",
                 version: "",
                 downloadUrl: "",
-                resolving: "Checking GitHub...",
                 author: "Th3Shadowbroker",
                 valid: false
             }
