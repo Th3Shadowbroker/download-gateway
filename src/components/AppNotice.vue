@@ -57,7 +57,8 @@
             <v-container class="text-center">
                 <h2>Download</h2>
                 <br/>
-                <v-btn target="_blank" v-on:click="this.openDownload" color="primary">Take me to the download!</v-btn>
+                <v-btn target="_blank" v-on:click="this.openDownload" color="primary">Take me to the download!</v-btn><br/>
+                <span class="grey--text"><a :href="downloadUrl" class="invisible-link">Download doesn't work?</a></span>
             </v-container>
             <br/>
         </v-container>
@@ -79,5 +80,14 @@
 <style scoped>
     h1 {
         font-size: 42px;
+    }
+
+    .invisible-link,
+    .invisible-link:visited,
+    .invisible-link:active,
+    .invisible-link:hover
+    {
+        color: inherit;
+        text-decoration: none;
     }
 </style>
